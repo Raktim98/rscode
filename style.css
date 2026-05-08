@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: 0.3s;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+#theme-toggle {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+}
+
+.search-box {
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-box button {
+    padding: 10px;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#loading {
+    margin-top: 20px;
+    font-size: 18px;
+    display: none;
+}
+
+.result {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.result h3 {
+    font-size: 24px;
+    text-transform: capitalize;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.dark-mode {
+    background: #121212;
+    color: #f4f4f4;
+}
+
+.dark-mode .container {
+    background: #1e1e1e;
+}
+
+.dark-mode input, .dark-mode button {
+    background: #333;
+    color: white;
+}
+
+.dark-mode #theme-toggle {
+    color: white;
+}

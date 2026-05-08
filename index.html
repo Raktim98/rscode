@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Dictionary</title>
+    
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+   
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="sound"></audio>
+    
+    <div class="container">
+        <header>
+            <h1>Dictionary <i class="fas fa-book-open"></i></h1>
+            <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+        </header>
+        
+        <div class="search-box">
+            <button id="voice-btn"><i class="fas fa-microphone"></i></button>
+            <input type="text" placeholder="Enter a word..." id="inp-word">
+            <button id="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+        
+        <div id="loading" class="hidden">
+            <i class="fas fa-spinner fa-spin"></i> Loading...
+        </div>
+        
+        <div class="result" id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
